@@ -1,0 +1,16 @@
+
+# Logging
+logging.level.root = info
+logging.level.com.netflix = debug
+
+# Spring
+spring.application.name = ribbon-client
+
+# Spring CLOUD RIBBON
+### PLEASE NOTE: following configurations replace the ones in com.rabbit.samples.ribbon.ribbonclient.configs.RibbonConfig
+### PLEASE NOTE: prefix is the name of the server the Ribbon client wants to communicate with
+greeting-server.ribbon.eureka.enabled = false
+greeting-server.ribbon.listOfServers = localhost:8081,localhost:8082
+greeting-server.ribbon.ServerListRefreshInterval = 15000
+greeting-server.ribbon.NFLoadBalancerPingClassName = com.netflix.loadbalancer.PingUrl
+greeting-server.ribbon.NFLoadBalancerRuleClassName = com.netflix.loadbalancer.WeightedResponseTimeRule
