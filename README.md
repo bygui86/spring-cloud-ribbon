@@ -30,7 +30,7 @@
 
 4. Make some requests to look at different results
 	```shell
-	curl http://localhost:8080/greeting
+	curl http://localhost:8080/get-greeting
 	```
 
 ---

@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RibbonclientApplication {
+public class RibbonClientApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RibbonclientApplication.class, args);
+		SpringApplication.run(RibbonClientApplication.class, args);
 	}
 
 }

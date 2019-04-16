@@ -1,4 +1,4 @@
-package com.rabbit.samples.ribbon.ribbonclient.clients;
+package com.rabbit.samples.ribbon.ribbonclient.controllers;
 
 import com.rabbit.samples.ribbon.ribbonclient.configs.RibbonConfig;
 import lombok.AccessLevel;
@@ -23,7 +23,7 @@ import org.springframework.web.client.RestTemplate;
 @AllArgsConstructor
 @Getter(AccessLevel.PROTECTED)
 @RestController
-@RequestMapping("/greeting")
+@RequestMapping("/get-greeting")
 @RibbonClient(
 		name = "greeting-server",
 		configuration = RibbonConfig.class
